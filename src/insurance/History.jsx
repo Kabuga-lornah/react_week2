@@ -96,48 +96,7 @@ const History = ({ onNext, onPrev, formData, setFormData }) => {
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 border-b-2 pb-3 border-gray-300">
               Driving Record (Past 3 Years)
             </h3>
-            
-            <div className="mb-6">
-              <h4 className="text-gray-800 font-medium mb-3">Accidents</h4>
-              {accidents.map((accident, index) => (
-                <div key={index} className="mb-6 p-6 border-2 border-gray-300 rounded-lg">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-gray-800 font-medium mb-2">Date</label>
-                      <input
-                        type="date"
-                        value={accident.date}
-                        onChange={(e) => handleAccidentChange(index, 'date', e.target.value)}
-                        className="mt-2 block w-full rounded-lg bg-white border-gray-400 border-2 text-black p-3 shadow-sm focus:ring-gray-500 focus:border-gray-500"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-gray-800 font-medium mb-2">Description</label>
-                      <input
-                        type="text"
-                        value={accident.description}
-                        onChange={(e) => handleAccidentChange(index, 'description', e.target.value)}
-                        className="mt-2 block w-full rounded-lg bg-white border-gray-400 border-2 text-black p-3 shadow-sm focus:ring-gray-500 focus:border-gray-500"
-                      />
-                    </div>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => removeAccident(index)}
-                    className="mt-4 text-red-600 text-sm font-medium"
-                  >
-                    Remove Accident
-                  </button>
-                </div>
-              ))}
-              <button
-                type="button"
-                onClick={addAccident}
-                className="text-gray-800 font-medium text-sm flex items-center"
-              >
-                <span className="mr-1">+</span> Add Accident
-              </button>
-            </div>
+          
 
             <div className="mb-6">
               <h4 className="text-gray-800 font-medium mb-3">Traffic Violations</h4>

@@ -51,7 +51,7 @@ const Vehicle = ({ onNext, onPrev, formData, setFormData }) => {
     <div className="min-h-screen bg-gray-100 py-10 px-6">
       <div className="max-w-4xl mx-auto bg-white p-10 rounded-2xl shadow-lg text-gray-800">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">BimaCare Car Insurance Kenya</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">BimaCare Carn Insurance Kenya</h1>
           <h2 className="text-2xl text-gray-700 mt-3 border-b-2 pb-4 border-gray-300">
             Vehicle Information
           </h2>
